@@ -22,6 +22,7 @@ const LayoutRouteRoute = LayoutRouteImport.update({
 } as any)
 
 const LayoutPageRoute = LayoutPageImport.update({
+  id: '/',
   path: '/',
   getParentRoute: () => LayoutRouteRoute,
 } as any)
