@@ -1,23 +1,17 @@
-import {
-	AppShell,
-	AppShellHeader,
-	AppShellMain,
-	Group,
-	Title,
-} from '@mantine/core'
+import { AppShell, Group, Title } from '@mantine/core'
 import { createFileRoute, Outlet } from '@tanstack/react-router'
 
 const AppLayout = () => {
 	return (
 		<AppShell padding="md" header={{ height: 64 }}>
-			<AppShellHeader>
+			<AppShell.Header>
 				<Group className="h-full" align="center" px="xl">
 					<Title>ACME</Title>
 				</Group>
-			</AppShellHeader>
-			<AppShellMain className="flex">
+			</AppShell.Header>
+			<AppShell.Main className="flex">
 				<Outlet />
-			</AppShellMain>
+			</AppShell.Main>
 		</AppShell>
 	)
 }
