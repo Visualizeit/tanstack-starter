@@ -15,6 +15,7 @@ declare module '@mantine/core' {
 const mantineTheme = createTheme({
 	primaryColor: 'primary',
 	defaultRadius: 'md',
+	activeClassName: 'active:brightness-90',
 	colors: {
 		primary: [
 			'#e5f4ff',
