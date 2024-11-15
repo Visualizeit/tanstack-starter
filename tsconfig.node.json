@@ -1,11 +1,4 @@
 {
-	"compilerOptions": {
-		"composite": true,
-		"skipLibCheck": true,
-		"module": "ESNext",
-		"moduleResolution": "bundler",
-		"allowSyntheticDefaultImports": true,
-		"strict": true
-	},
+	"extends": "@total-typescript/tsconfig/tsc/no-dom/library-monorepo",
 	"include": ["vite.config.ts", "tailwind.config.ts"]
 }
