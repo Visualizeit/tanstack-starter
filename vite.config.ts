@@ -12,6 +12,11 @@ export default defineConfig({
 		tailwindcss(),
 		react(),
 	],
+	resolve: {
+		alias: {
+			'@tabler/icons-react': '@tabler/icons-react/dist/esm/icons/index.mjs',
+		},
+	},
 	server: {
 		open: true,
 	},
