@@ -4,7 +4,7 @@ import {
 	createTheme,
 } from '@mantine/core'
 
-type ExtendedCustomColors = 'primary' | DefaultMantineColor
+type ExtendedCustomColors = 'brand' | DefaultMantineColor
 
 declare module '@mantine/core' {
 	export interface MantineThemeColorsOverride {
@@ -13,11 +13,11 @@ declare module '@mantine/core' {
 }
 
 const mantineTheme = createTheme({
-	primaryColor: 'primary',
+	primaryColor: 'brand',
 	defaultRadius: 'md',
 	activeClassName: 'active:brightness-90',
 	colors: {
-		primary: [
+		brand: [
 			'#e5f3ff',
 			'#cde2ff',
 			'#9ac2ff',
