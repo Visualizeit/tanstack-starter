@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@epic-web/config": "^1.16.4",
-    "@tailwindcss/vite": "4.0.0-beta.6",
+    "@tailwindcss/vite": "4.0.0-beta.7",
     "@tanstack/router-devtools": "^1.87.0",
     "@tanstack/router-plugin": "^1.86.0",
     "@total-typescript/tsconfig": "^1.0.4",
