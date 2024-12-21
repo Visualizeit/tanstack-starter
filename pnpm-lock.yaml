@@ -15,8 +15,8 @@ importers:
         specifier: ^7.14.3
         version: 7.14.3(react@18.3.1)
       '@tabler/icons-react':
-        specifier: ^3.24.0
-        version: 3.24.0(react@18.3.1)
+        specifier: ^3.26.0
+        version: 3.26.0(react@18.3.1)
       '@tanstack/react-query':
         specifier: ^5.62.3
         version: 5.62.3(react@18.3.1)
@@ -704,13 +704,13 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@tabler/icons-react@3.24.0':
-    resolution: {integrity: sha512-m9c7TmlcDmKqvZAasG5rv1YvazZDrVEhNdNFa2d1Bzotc0dh+iceFdiZCEcYPDb5UcRyLAMvOaOC9y/5sfMMWw==}
+  '@tabler/icons-react@3.26.0':
+    resolution: {integrity: sha512-t18Zmu1ROktB7M8hWQ6vJw+mNpI/LPk5PPxLuE+kNB+4Zzf38GfETL8VF98inhzcfHohsggdROzMzwSAfjcAxw==}
     peerDependencies:
       react: '>= 16'
 
-  '@tabler/icons@3.24.0':
-    resolution: {integrity: sha512-qNis9e90QcdxAGV3wNIeX0Ba2R7ktm0cnqOToKHJfC2kj3fvJwEVLsw63K0/fm7NW8rSZjDSTQRmMnSg8g/wrg==}
+  '@tabler/icons@3.26.0':
+    resolution: {integrity: sha512-oO3D4ss+DxzxqU1aDy0f1HmToyrO0gcQWIMpzHAfV1quPUx0BZYvNm5xz1DQb4DxNm/+xNvbBGLJy4pzTLYWag==}
 
   '@tailwindcss/node@4.0.0-beta.6':
     resolution: {integrity: sha512-W07J19+05rRFKfk4sVtkNTb4iuGTI3BU6Ip/iEbb/w5NvaP+fSFK31OYFpJ+CXEWrbNgidUg46BQpw4Y1gophA==}
@@ -3059,12 +3059,12 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.28.1':
     optional: true
 
-  '@tabler/icons-react@3.24.0(react@18.3.1)':
+  '@tabler/icons-react@3.26.0(react@18.3.1)':
     dependencies:
-      '@tabler/icons': 3.24.0
+      '@tabler/icons': 3.26.0
       react: 18.3.1
 
-  '@tabler/icons@3.24.0': {}
+  '@tabler/icons@3.26.0': {}
 
   '@tailwindcss/node@4.0.0-beta.6':
     dependencies:
