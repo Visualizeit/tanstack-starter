@@ -26,7 +26,7 @@
     "@epic-web/config": "^1.16.4",
     "@tailwindcss/vite": "4.0.0-beta.8",
     "@tanstack/router-devtools": "^1.92.1",
-    "@tanstack/router-plugin": "^1.91.1",
+    "@tanstack/router-plugin": "^1.92.11",
     "@total-typescript/tsconfig": "^1.0.4",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
