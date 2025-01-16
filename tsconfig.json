@@ -1,6 +1,6 @@
 {
 	"extends": ["@epic-web/config/typescript"],
-	"include": ["@epic-web/config/reset.d.ts", "src"],
+	"include": ["src"],
 	"compilerOptions": {
 		"types": ["vite/client"],
 		"paths": {
