@@ -15,7 +15,7 @@
     "@mantine/core": "^7.16.3",
     "@mantine/hooks": "^7.16.3",
     "@tabler/icons-react": "^3.30.0",
-    "@tanstack/react-query": "^5.66.3",
+    "@tanstack/react-query": "^5.67.1",
     "@tanstack/react-router": "^1.105.0",
     "ky": "^1.7.5",
     "react": "^19.0.0",
