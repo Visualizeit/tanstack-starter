@@ -33,7 +33,10 @@ export const Route = createRootRoute({
 				title: 'Vite Starter',
 			},
 		],
-		links: [{ rel: 'stylesheet', href: appCSSURL }],
+		links: [
+			{ rel: 'icon', type: 'image/svg+xml', href: '/vite.svg' },
+			{ rel: 'stylesheet', href: appCSSURL },
+		],
 	}),
 	component: RootComponent,
 })
