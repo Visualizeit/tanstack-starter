@@ -1,12 +1,39 @@
-import { type QueryClient } from '@tanstack/react-query'
-import { createRootRouteWithContext, Outlet } from '@tanstack/react-router'
+import { mantineHtmlProps, ColorSchemeScript } from '@mantine/core'
+import { createRootRoute, HeadContent, Scripts } from '@tanstack/react-router'
+import MainLayout from '../components/layout/MainLayout'
+import Providers from '../Providers'
+import appCSSURL from '@/app.css?url'
 
-interface RouterContext {
-	queryClient: QueryClient
-}
+const RootComponent = () => (
+	<html lang="en" {...mantineHtmlProps}>
+		<head>
+			<HeadContent />
+			<ColorSchemeScript />
+		</head>
+		<body>
+			<Providers>
+				<MainLayout />
+			</Providers>
+			<Scripts />
+		</body>
+	</html>
+)
 
-const AppRoot = () => <Outlet />
-
-export const Route = createRootRouteWithContext<RouterContext>()({
-	component: AppRoot,
+export const Route = createRootRoute({
+	head: () => ({
+		meta: [
+			{
+				charSet: 'utf-8',
+			},
+			{
+				name: 'viewport',
+				content: 'width=device-width, initial-scale=1',
+			},
+			{
+				title: 'Vite Starter',
+			},
+		],
+		links: [{ rel: 'stylesheet', href: appCSSURL }],
+	}),
+	component: RootComponent,
 })

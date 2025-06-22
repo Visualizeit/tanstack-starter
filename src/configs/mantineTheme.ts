@@ -2,7 +2,10 @@ import {
 	type DefaultMantineColor,
 	type MantineColorsTuple,
 	createTheme,
+	Input,
+	Switch,
 } from '@mantine/core'
+import classes from './components.module.css'
 
 type ExtendedCustomColors = 'brand' | DefaultMantineColor
 
@@ -13,21 +16,29 @@ declare module '@mantine/core' {
 }
 
 const mantineTheme = createTheme({
+	components: {
+		Input: Input.extend({
+			classNames: {
+				input: classes.input,
+			},
+		}),
+		Switch: Switch.extend({ defaultProps: { withThumbIndicator: false } }),
+	},
 	primaryColor: 'brand',
 	defaultRadius: 'md',
 	activeClassName: 'active:brightness-90',
 	colors: {
 		brand: [
-			'#e5f3ff',
-			'#cde2ff',
-			'#9ac2ff',
-			'#64a0ff',
-			'#3884fe',
-			'#1d72fe',
-			'#0969ff',
-			'#0058e4',
-			'#004ecd',
-			'#0043b5',
+			'#E5F3FF',
+			'#CDE2FF',
+			'#9AC2FF',
+			'#64A0FF',
+			'#3884FE',
+			'#1D72FE',
+			'#0969FF',
+			'#0058E4',
+			'#004ECD',
+			'#0043B5',
 		],
 	},
 })

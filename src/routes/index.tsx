@@ -1,14 +1,14 @@
 import { Container, Title } from '@mantine/core'
 import { createFileRoute } from '@tanstack/react-router'
 
-const HomePage = () => {
+const Home = () => {
 	return (
 		<Container className="flex-1" size="xl">
-			<Title c="brand">Welcome Home!</Title>
+			<Title c="brand">Hello World!</Title>
 		</Container>
 	)
 }
 
-export const Route = createFileRoute('/_layout/')({
-	component: HomePage,
+export const Route = createFileRoute('/')({
+	component: Home,
 })
