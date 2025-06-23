@@ -1,8 +1,12 @@
-import { mantineHtmlProps, ColorSchemeScript } from '@mantine/core'
+import {
+	mantineHtmlProps,
+	ColorSchemeScript,
+	MantineProvider,
+} from '@mantine/core'
 import { createRootRoute, HeadContent, Scripts } from '@tanstack/react-router'
 import MainLayout from '../components/layout/MainLayout'
-import Providers from '../Providers'
 import appCSSURL from '@/app.css?url'
+import mantineTheme from '@/configs/mantineTheme'
 
 const RootComponent = () => (
 	<html lang="en" {...mantineHtmlProps}>
@@ -11,9 +15,9 @@ const RootComponent = () => (
 			<ColorSchemeScript />
 		</head>
 		<body>
-			<Providers>
+			<MantineProvider theme={mantineTheme}>
 				<MainLayout />
-			</Providers>
+			</MantineProvider>
 			<Scripts />
 		</body>
 	</html>
