@@ -73,8 +73,8 @@ importers:
         specifier: ^5.9.3
         version: 5.9.3
       ultracite:
-        specifier: 6.0.3
-        version: 6.0.3(typescript@5.9.3)
+        specifier: 6.0.4
+        version: 6.0.4(typescript@5.9.3)
       vite:
         specifier: ^7.1.12
         version: 7.1.12(@types/node@24.9.1)(jiti@2.6.1)(lightningcss@1.30.2)(sugarss@5.0.1(postcss@8.5.6))(terser@5.43.1)(tsx@4.20.6)(yaml@2.8.0)
@@ -1474,8 +1474,8 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
-  rou3@0.7.8:
-    resolution: {integrity: sha512-21X/el5fdOaEsqwl3an/d9kpZ8hshVIyrwFCpsoleJ4ccAGRbN+PVoxyXzWXkHDxfMkVnLe4yzx+imz2qoem2Q==}
+  rou3@0.7.9:
+    resolution: {integrity: sha512-+JM7c8swGkoXkWRkIz7qpYN9Bls7Rj/vuSGaxtoKHIe8Ba1ci+mXnqzqtJFrXSbvEazNL9v83P2RiXae9NSbfQ==}
 
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
@@ -1616,8 +1616,8 @@ packages:
   ufo@1.6.1:
     resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
 
-  ultracite@6.0.3:
-    resolution: {integrity: sha512-8NiA2HN7EHIteIUAt6mhME8hd1DcAmcpNuR2N2fJqU700FiswhT7oeuca1M3jrPwyJUG3hPWYi/t6aUM3wbb8w==}
+  ultracite@6.0.4:
+    resolution: {integrity: sha512-wpf6iPsZrzJBVVvcVwCDjeKpGomjqByxCAkJ+/OUxZzKqdi5KpLd9QynUrKIJkh7/QGJdR7xMSY+TB1c5vMJ5Q==}
     hasBin: true
 
   undici-types@7.16.0:
@@ -2850,7 +2850,7 @@ snapshots:
     dependencies:
       cookie-es: 2.0.0
       fetchdts: 0.1.7
-      rou3: 0.7.8
+      rou3: 0.7.9
       srvx: 0.8.16
     optionalDependencies:
       crossws: 0.4.1(srvx@0.8.16)
@@ -3179,7 +3179,7 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.52.5
       fsevents: 2.3.3
 
-  rou3@0.7.8: {}
+  rou3@0.7.9: {}
 
   safer-buffer@2.1.2: {}
 
@@ -3270,7 +3270,7 @@ snapshots:
 
   ufo@1.6.1: {}
 
-  ultracite@6.0.3(typescript@5.9.3):
+  ultracite@6.0.4(typescript@5.9.3):
     dependencies:
       '@clack/prompts': 0.11.0
       '@trpc/server': 11.7.0(typescript@5.9.3)

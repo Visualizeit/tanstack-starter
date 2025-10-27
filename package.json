@@ -35,7 +35,7 @@
     "postcss-simple-vars": "^7.0.1",
     "tailwindcss": "4.1.16",
     "typescript": "^5.9.3",
-    "ultracite": "6.0.3",
+    "ultracite": "6.0.4",
     "vite": "^7.1.12",
     "vite-tsconfig-paths": "^5.1.4"
   }
