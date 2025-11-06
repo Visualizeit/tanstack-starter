@@ -2,7 +2,7 @@ import { Container, Title } from '@mantine/core'
 import { createFileRoute } from '@tanstack/react-router'
 
 const Component = () => (
-    <Container className="flex-1" size="xl">
+    <Container>
         <Title c="brand">Hello World!</Title>
     </Container>
 )
