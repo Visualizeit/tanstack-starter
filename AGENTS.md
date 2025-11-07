@@ -46,7 +46,7 @@ Prefer Mantine components and hooks over third-party libraries or native HTML.
 
 ### Utility Libraries
 
-Prefer utility libraries (es-toolkit, remeda) over native implementations to simplify logic.
+Prefer utility library es-toolkit over native implementations to simplify logic.
 
 ### Assertions
 
