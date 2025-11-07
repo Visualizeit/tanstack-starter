@@ -30,9 +30,6 @@
       "style": {
         "useFilenamingConvention": "off",
         "useConsistentTypeDefinitions": "off"
-      },
-      "suspicious": {
-        "noUnknownAtRules": "off"
       }
     }
   }
