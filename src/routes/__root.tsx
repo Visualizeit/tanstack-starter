@@ -8,7 +8,7 @@ import appCSSURL from '@/app.css?url'
 import mantineTheme from '@/configs/mantineTheme'
 import MainLayout from '../components/layout/MainLayout'
 
-const RootComponent = () => (
+const Component = () => (
     <html lang="en" {...mantineHtmlProps}>
         <head>
             <HeadContent />
@@ -42,5 +42,5 @@ export const Route = createRootRoute({
             { rel: 'stylesheet', href: appCSSURL },
         ],
     }),
-    component: RootComponent,
+    component: Component,
 })
