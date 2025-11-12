@@ -50,4 +50,4 @@ Prefer utility library es-toolkit over native implementations to simplify logic.
 
 ### Assertions
 
-Use **tiny-invariant** for asserting nullable values.
+Use **es-toolkit's invariant** (`import { invariant } from 'es-toolkit/util'`) for asserting nullable values.
