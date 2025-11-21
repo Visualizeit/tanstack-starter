@@ -5,9 +5,9 @@
 @import "@mantine/core/styles.layer.css";
 
 @custom-variant dark (&:where(
-  [data-mantine-color-scheme="dark"],
-  [data-mantine-color-scheme="dark"] *
-));
+    [data-mantine-color-scheme="dark"],
+    [data-mantine-color-scheme="dark"] *
+  ));
 
 @layer base {
   .tabler-icon {
