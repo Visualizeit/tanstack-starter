@@ -8,8 +8,7 @@
     "build": "vite build",
     "start": "node .output/server/index.mjs",
     "check": "ultracite check",
-    "fix": "ultracite fix",
-    "prepare": "lefthook install"
+    "fix": "ultracite fix"
   },
   "dependencies": {
     "@mantine/core": "8.3.8",
