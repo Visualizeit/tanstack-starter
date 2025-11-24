@@ -15,7 +15,7 @@
     "@mantine/hooks": "8.3.8",
     "@tabler/icons-react": "^3.35.0",
     "@tanstack/react-router": "1.139.0",
-    "@tanstack/react-start": "1.139.0",
+    "@tanstack/react-start": "1.139.3",
     "clsx": "^2.1.1",
     "es-toolkit": "^1.42.0",
     "nitro": "3.0.1-alpha.1",
