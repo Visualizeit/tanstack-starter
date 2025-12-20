@@ -41,7 +41,7 @@ const mantineTheme = createTheme({
             classNames: {
                 input: clsx(
                     'transition-none',
-                    'focus-within:-outline-offset-1 focus-within:border-transparent focus-within:outline focus-within:outline-2 focus-within:outline-[var(--mantine-primary-color-filled)]',
+                    'focus-within:border-transparent focus-within:outline focus-within:outline-2 focus-within:outline-[var(--mantine-primary-color-filled)] focus-within:-outline-offset-1',
                     '[&.mantine-Spotlight-search]:outline-0'
                 ),
             },
