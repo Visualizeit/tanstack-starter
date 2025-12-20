@@ -16,9 +16,6 @@ export default defineConfig({
         tanstackStart({
             router: {
                 customScaffolding,
-                experimental: {
-                    nonNestedRoutes: true,
-                },
             },
         }),
         nitro(),
