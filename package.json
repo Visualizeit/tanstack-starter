@@ -41,7 +41,7 @@
     "ultracite": "7.0.12",
     "vite": "^7.3.1",
     "vite-plugin-devtools-json": "^1.0.0",
-    "vite-tsconfig-paths": "^6.0.4"
+    "vite-tsconfig-paths": "^6.0.5"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
