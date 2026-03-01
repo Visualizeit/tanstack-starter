@@ -23,8 +23,8 @@ declare module '@mantine/core' {
     }
 
     export interface MantineThemeSizesOverride {
-        spacing: Record<ExtendedCustomSpacing, string>
         radius: Record<ExtendedCustomRadius, string>
+        spacing: Record<ExtendedCustomSpacing, string>
     }
 }
 
