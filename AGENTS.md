@@ -25,6 +25,10 @@ Prefer **interface** over type.
 
 Avoid abbreviated variable names. Use descriptive, full names.
 
+### Syntax
+
+Do not use optional chaining syntax.
+
 ### Occam's Razor Principle
 
 If unnecessary, do not add complexity:
