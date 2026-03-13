@@ -24,8 +24,8 @@ A modern, production-ready starter template for building full-stack React applic
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/Visualizeit/vite-starter
-cd vite-starter
+git clone https://github.com/Visualizeit/tanstack-starter
+cd tanstack-starter
 ```
 
 2. Install dependencies:
