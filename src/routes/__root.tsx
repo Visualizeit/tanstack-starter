@@ -1,12 +1,10 @@
-import {
-    ColorSchemeScript,
-    MantineProvider,
-    mantineHtmlProps,
-} from '@mantine/core'
+import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/core'
 import { createRootRoute, HeadContent, Scripts } from '@tanstack/react-router'
+
+import MainLayout from '@/components/layout/main-layout'
+import mantineTheme from '@/configs/mantine-theme'
+
 import appCSSURL from '@/app.css?url'
-import mantineTheme from '@/configs/mantineTheme'
-import MainLayout from '../components/layout/MainLayout'
 
 const Component = () => (
     <html lang="en" {...mantineHtmlProps}>
@@ -24,23 +22,23 @@ const Component = () => (
 )
 
 export const Route = createRootRoute({
+    component: Component,
     head: () => ({
+        links: [
+            { href: '/favicon.svg', rel: 'icon', type: 'image/svg+xml' },
+            { href: appCSSURL, rel: 'stylesheet' },
+        ],
         meta: [
             {
-                charSet: 'utf-8',
+                charSet: 'utf8',
             },
             {
-                name: 'viewport',
                 content: 'width=device-width, initial-scale=1',
+                name: 'viewport',
             },
             {
                 title: 'TanStack Starter',
             },
         ],
-        links: [
-            { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-            { rel: 'stylesheet', href: appCSSURL },
-        ],
     }),
-    component: Component,
 })

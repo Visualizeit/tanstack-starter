@@ -14,8 +14,8 @@ const Component = () => {
 `
 
 const customScaffolding = {
-    routeTemplate,
     lazyRouteTemplate: routeTemplate,
+    routeTemplate,
 }
 
 export default customScaffolding

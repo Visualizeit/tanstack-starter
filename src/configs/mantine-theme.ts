@@ -1,14 +1,5 @@
-import {
-    Badge,
-    Button,
-    Container,
-    createTheme,
-    type DefaultMantineColor,
-    type DefaultMantineSize,
-    Input,
-    type MantineColorsTuple,
-    Switch,
-} from '@mantine/core'
+import { Badge, Button, Container, createTheme, Input, Switch } from '@mantine/core'
+import type { DefaultMantineColor, DefaultMantineSize, MantineColorsTuple } from '@mantine/core'
 import { clsx } from 'clsx'
 
 type ExtendedCustomColors = 'brand' | DefaultMantineColor
@@ -29,27 +20,6 @@ declare module '@mantine/core' {
 }
 
 const mantineTheme = createTheme({
-    components: {
-        Container: Container.extend({ defaultProps: { strategy: 'grid' } }),
-        Button: Button.extend({
-            classNames: { root: 'font-medium' },
-        }),
-        Badge: Badge.extend({
-            classNames: { root: 'font-medium' },
-        }),
-        Input: Input.extend({
-            classNames: {
-                input: clsx(
-                    'transition-none',
-                    'focus-within:border-transparent focus-within:outline focus-within:outline-2 focus-within:outline-[var(--mantine-primary-color-filled)] focus-within:-outline-offset-1',
-                    '[&.mantine-Spotlight-search]:outline-0'
-                ),
-            },
-        }),
-        Switch: Switch.extend({ defaultProps: { withThumbIndicator: false } }),
-    },
-    primaryColor: 'brand',
-    defaultRadius: 'md',
     activeClassName: 'active:brightness-90',
     colors: {
         brand: [
@@ -65,12 +35,33 @@ const mantineTheme = createTheme({
             '#0043B5',
         ],
     },
-    spacing: {
-        xxs: 'calc(0.25rem * var(--mantine-scale))',
-        full: 'calc(infinity * 1px)',
+    components: {
+        Badge: Badge.extend({
+            classNames: { root: 'font-medium' },
+        }),
+        Button: Button.extend({
+            classNames: { root: 'font-medium' },
+        }),
+        Container: Container.extend({ defaultProps: { strategy: 'grid' } }),
+        Input: Input.extend({
+            classNames: {
+                input: clsx(
+                    'transition-none',
+                    'focus-within:border-transparent focus-within:outline focus-within:outline-2 focus-within:outline-[var(--mantine-primary-color-filled)] focus-within:-outline-offset-1',
+                    '[&.mantine-Spotlight-search]:outline-0',
+                ),
+            },
+        }),
+        Switch: Switch.extend({ defaultProps: { withThumbIndicator: false } }),
     },
+    defaultRadius: 'md',
+    primaryColor: 'brand',
     radius: {
         full: 'calc(infinity * 1px)',
+    },
+    spacing: {
+        full: 'calc(infinity * 1px)',
+        xxs: 'calc(0.25rem * var(--mantine-scale))',
     },
 })
 

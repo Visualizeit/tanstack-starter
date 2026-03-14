@@ -1,8 +1,8 @@
 @layer theme, base, mantine, components, utilities;
 
-@import "tailwindcss";
+@import 'tailwindcss';
 
-@import "@mantine/core/styles.layer.css";
+@import '@mantine/core/styles.layer.css';
 
 @custom-variant dark (&:where(
     [data-mantine-color-scheme="dark"],
@@ -10,15 +10,15 @@
   ));
 
 @layer base {
-  .tabler-icon {
-    stroke-width: 1.5;
-  }
+    .tabler-icon {
+        stroke-width: 1.5;
+    }
 
-  ol {
-    list-style: decimal;
-  }
+    ol {
+        list-style: decimal;
+    }
 
-  ul {
-    list-style: disc;
-  }
+    ul {
+        list-style: disc;
+    }
 }

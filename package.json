@@ -1,51 +1,53 @@
 {
-  "name": "tanstack-starter",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "start": "node .output/server/index.mjs",
-    "check": "ultracite check",
-    "fix": "ultracite fix"
-  },
-  "dependencies": {
-    "@mantine/core": "8.3.16",
-    "@mantine/hooks": "8.3.16",
-    "@tabler/icons-react": "^3.40.0",
-    "@tanstack/react-router": "1.166.7",
-    "@tanstack/react-start": "1.166.7",
-    "clsx": "^2.1.1",
-    "es-toolkit": "^1.45.1",
-    "nitro": "3.0.1-alpha.2",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "zod": "^4.3.6"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.4.6",
-    "@tailwindcss/vite": "4.2.1",
-    "@total-typescript/tsconfig": "^1.0.4",
-    "@types/node": "^25.4.0",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.4",
-    "autoprefixer": "^10.4.27",
-    "lefthook": "^2.1.3",
-    "postcss": "^8.5.8",
-    "postcss-preset-mantine": "^1.18.0",
-    "postcss-simple-vars": "^7.0.1",
-    "tailwindcss": "4.2.1",
-    "typescript": "^5.9.3",
-    "ultracite": "7.2.5",
-    "vite": "^7.3.1",
-    "vite-plugin-devtools-json": "^1.0.0",
-    "vite-tsconfig-paths": "^6.1.1"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "lefthook"
-    ]
-  }
+    "name": "tanstack-starter",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "start": "node .output/server/index.mjs",
+        "check": "ultracite check",
+        "fix": "ultracite fix",
+        "prepare": "lefthook install"
+    },
+    "dependencies": {
+        "@mantine/core": "8.3.16",
+        "@mantine/hooks": "8.3.16",
+        "@tabler/icons-react": "^3.40.0",
+        "@tanstack/react-router": "1.166.7",
+        "@tanstack/react-start": "1.166.7",
+        "clsx": "^2.1.1",
+        "es-toolkit": "^1.45.1",
+        "nitro": "3.0.1-alpha.2",
+        "react": "^19.2.4",
+        "react-dom": "^19.2.4",
+        "zod": "^4.3.6"
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "4.2.1",
+        "@total-typescript/tsconfig": "^1.0.4",
+        "@types/node": "^25.4.0",
+        "@types/react": "^19.2.14",
+        "@types/react-dom": "^19.2.3",
+        "@vitejs/plugin-react": "^5.1.4",
+        "autoprefixer": "^10.4.27",
+        "lefthook": "^2.1.3",
+        "oxfmt": "^0.40.0",
+        "oxlint": "^1.55.0",
+        "postcss": "^8.5.8",
+        "postcss-preset-mantine": "^1.18.0",
+        "postcss-simple-vars": "^7.0.1",
+        "tailwindcss": "4.2.1",
+        "typescript": "^5.9.3",
+        "ultracite": "7.3.0",
+        "vite": "^7.3.1",
+        "vite-plugin-devtools-json": "^1.0.0",
+        "vite-tsconfig-paths": "^6.1.1"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "lefthook"
+        ]
+    }
 }
