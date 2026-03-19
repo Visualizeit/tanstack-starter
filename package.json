@@ -4,12 +4,12 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "vite",
-        "build": "vite build",
+        "dev": "vp dev",
+        "build": "vp build",
         "start": "node .output/server/index.mjs",
-        "check": "ultracite check",
-        "fix": "ultracite fix",
-        "prepare": "lefthook install"
+        "check": "vp check",
+        "fix": "vp check --fix",
+        "staged": "vp staged"
     },
     "dependencies": {
         "@mantine/core": "^8.3.18",
@@ -31,7 +31,6 @@
         "@types/react": "^19.2.14",
         "@types/react-dom": "^19.2.3",
         "@vitejs/plugin-react": "^6.0.1",
-        "lefthook": "^2.1.4",
         "oxfmt": "^0.41.0",
         "oxlint": "^1.56.0",
         "postcss": "^8.5.8",
@@ -40,11 +39,7 @@
         "tailwindcss": "^4.2.2",
         "typescript": "^5.9.3",
         "ultracite": "^7.3.2",
-        "vite": "^8.0.0"
-    },
-    "pnpm": {
-        "onlyBuiltDependencies": [
-            "lefthook"
-        ]
+        "vite": "^8.0.0",
+        "vite-plus": "0.1.12"
     }
 }

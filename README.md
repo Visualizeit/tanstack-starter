@@ -9,8 +9,8 @@ A modern, production-ready starter template for building full-stack React applic
 - **TypeScript** - Strict type safety
 - **Mantine UI** - Component library with custom theme
 - **Tailwind CSS** - Utility-first CSS framework
-- **Vite** - Next-generation build tool
-- **Biome** - Fast linting and formatting
+- **Vite+** - Unified dev, build, lint, format, and test toolchain
+- **Oxlint / Oxfmt** - Linting and formatting via `vp check`
 
 ## Getting Started
 
@@ -18,6 +18,7 @@ A modern, production-ready starter template for building full-stack React applic
 
 - [Node.js](https://nodejs.org/en) (LTS version recommended)
 - [pnpm](https://pnpm.io)
+- [Vite+](https://viteplus.dev/)
 
 ### Installation
 
@@ -42,37 +43,18 @@ pnpm dev
 
 ## Available Scripts
 
-| Command      | Description                            |
-| ------------ | -------------------------------------- |
-| `pnpm dev`   | Start development server with HMR      |
-| `pnpm build` | Build for production with SSR          |
-| `pnpm start` | Start production server                |
-| `pnpm check` | Run linter and formatter checks        |
-| `pnpm fix`   | Auto-fix linting and formatting issues |
-
-## Project Structure
-
-```
-src/
-├── routes/              # File-based routing
-├── components/          # React components
-├── configs/             # Theme and configuration files
-├── router.ts            # Router setup
-└── app.css              # Global styles
-```
+| Command      | Description                             |
+| ------------ | --------------------------------------- |
+| `pnpm dev`   | Start development server with HMR       |
+| `pnpm build` | Build for production with SSR           |
+| `pnpm start` | Start production server                 |
+| `pnpm check` | Run Vite+ linting and formatting checks |
+| `pnpm fix`   | Auto-fix linting and formatting issues  |
 
 ## Features
 
-- File-based routing with type-safe navigation
-- Server-side rendering (SSR) via Nitro
-- Custom Mantine theme with Tailwind integration
-- Hot Module Replacement (HMR)
-- Git hooks for code quality (auto-format on commit)
-- Path aliases (`@/*` imports)
+- File-based routing with SSR via TanStack Start and Nitro
+- Mantine UI with Tailwind CSS
+- Vite+ workflow for dev, build, lint, and format
+- Git hooks via `vp staged`
 - TypeScript strict mode
-
-## Customization
-
-- **Theme**: Modify `src/configs/mantineTheme.ts`
-- **Colors**: Update brand colors in the theme configuration
-- **Layout**: Edit `src/components/layout/MainLayout.tsx`
