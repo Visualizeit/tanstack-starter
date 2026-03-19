@@ -15,8 +15,8 @@
         "@mantine/core": "^8.3.18",
         "@mantine/hooks": "^8.3.18",
         "@tabler/icons-react": "^3.40.0",
-        "@tanstack/react-router": "^1.167.4",
-        "@tanstack/react-start": "^1.166.16",
+        "@tanstack/react-router": "^1.167.5",
+        "@tanstack/react-start": "^1.166.17",
         "clsx": "^2.1.1",
         "es-toolkit": "^1.45.1",
         "nitro": "3.0.260311-beta",
@@ -25,7 +25,7 @@
         "zod": "^4.3.6"
     },
     "devDependencies": {
-        "@tailwindcss/vite": "0.0.0-insiders.f302fce",
+        "@tailwindcss/vite": "4.2.2",
         "@total-typescript/tsconfig": "^1.0.4",
         "@types/node": "^25.5.0",
         "@types/react": "^19.2.14",
@@ -37,7 +37,7 @@
         "postcss": "^8.5.8",
         "postcss-preset-mantine": "^1.18.0",
         "postcss-simple-vars": "^7.0.1",
-        "tailwindcss": "^4.2.1",
+        "tailwindcss": "^4.2.2",
         "typescript": "^5.9.3",
         "ultracite": "^7.3.2",
         "vite": "^8.0.0"
