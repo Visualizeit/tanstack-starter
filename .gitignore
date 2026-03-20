@@ -15,10 +15,6 @@ dist-ssr
 .tanstack
 *.local
 
-# AI
-.agents/*
-.claude/*
-
 # Editor directories and files
 .idea
 .DS_Store
