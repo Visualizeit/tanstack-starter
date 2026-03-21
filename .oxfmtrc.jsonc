@@ -7,5 +7,5 @@
     "singleQuote": true,
     "sortPackageJson": true,
     "sortImports": {},
-    "ignorePatterns": ["src/routeTree.gen.ts"],
+    "ignorePatterns": [".agents/**", ".claude/**", "src/routeTree.gen.ts"],
 }
