@@ -31,8 +31,6 @@
         "@types/react": "^19.2.14",
         "@types/react-dom": "^19.2.3",
         "@vitejs/plugin-react": "^6.0.1",
-        "oxfmt": "^0.43.0",
-        "oxlint": "^1.58.0",
         "postcss": "^8.5.8",
         "postcss-preset-mantine": "^1.18.0",
         "postcss-simple-vars": "^7.0.1",
