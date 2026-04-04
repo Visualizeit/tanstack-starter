@@ -10,7 +10,7 @@
   ));
 
 @layer base {
-    .tabler-icon {
+    .lucide {
         stroke-width: 1.5;
     }
 
