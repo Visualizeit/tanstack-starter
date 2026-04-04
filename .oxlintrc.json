@@ -3,7 +3,15 @@
     "extends": [
         "./node_modules/ultracite/config/oxlint/core/.oxlintrc.json",
         "./node_modules/ultracite/config/oxlint/remix/.oxlintrc.json",
-        "./node_modules/ultracite/config/oxlint/react/.oxlintrc.json"
+        "./node_modules/ultracite/config/oxlint/react/.oxlintrc.json",
     ],
-    "ignorePatterns": [".agents/**", ".claude/**", "src/routeTree.gen.ts"]
+    "ignorePatterns": [".agents/**", ".claude/**", "src/routeTree.gen.ts"],
+    "overrides": [
+        {
+            "files": ["src/routes/**/*.{ts,tsx}"],
+            "rules": {
+                "unicorn/filename-case": "off",
+            },
+        },
+    ],
 }
