@@ -30,7 +30,8 @@ export const Route = createRootRoute({
         ],
         meta: [
             {
-                charSet: 'utf8',
+                // oxlint-disable-next-line unicorn/text-encoding-identifier-case
+                charSet: 'utf-8',
             },
             {
                 content: 'width=device-width, initial-scale=1',
