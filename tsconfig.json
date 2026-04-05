@@ -7,7 +7,6 @@
         "rootDirs": ["."],
         "paths": {
             "@/*": ["./src/*"]
-        },
-        "strictNullChecks": true
+        }
     }
 }

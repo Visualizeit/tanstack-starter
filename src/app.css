@@ -10,10 +10,6 @@
   ));
 
 @layer base {
-    .lucide {
-        stroke-width: 1.5;
-    }
-
     ol {
         list-style: decimal;
     }
