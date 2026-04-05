@@ -25,12 +25,14 @@
         "zod": "^4.3.6"
     },
     "devDependencies": {
+        "@rolldown/plugin-babel": "^0.2.2",
         "@tailwindcss/vite": "4.2.2",
         "@total-typescript/tsconfig": "^1.0.4",
         "@types/node": "^25.5.0",
         "@types/react": "^19.2.14",
         "@types/react-dom": "^19.2.3",
         "@vitejs/plugin-react": "^6.0.1",
+        "babel-plugin-react-compiler": "^1.0.0",
         "postcss": "^8.5.8",
         "postcss-preset-mantine": "^1.18.0",
         "postcss-simple-vars": "^7.0.1",

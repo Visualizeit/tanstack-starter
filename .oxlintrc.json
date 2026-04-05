@@ -6,6 +6,10 @@
         "./node_modules/ultracite/config/oxlint/react/.oxlintrc.json"
     ],
     "ignorePatterns": [".agents/**", ".claude/**", "src/routeTree.gen.ts"],
+    "rules": {
+        "promise/prefer-await-to-then": "off",
+        "react_perf/jsx-no-new-function-as-prop": "off"
+    },
     "overrides": [
         {
             "files": ["src/routes/**/*.{ts,tsx}"],
