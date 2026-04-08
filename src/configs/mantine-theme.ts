@@ -55,7 +55,7 @@ const mantineTheme = createTheme({
         Switch: Switch.extend({ defaultProps: { withThumbIndicator: false } }),
     },
     headings: {
-        fontWeight: '600',
+        fontWeight: 'var(--mantine-font-weight-medium)',
     },
     primaryColor: 'brand',
     radius: {
