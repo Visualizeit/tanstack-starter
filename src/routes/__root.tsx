@@ -13,7 +13,7 @@ const Component = () => (
             <ColorSchemeScript />
         </head>
         <body>
-            <MantineProvider theme={mantineTheme}>
+            <MantineProvider deduplicateInlineStyles theme={mantineTheme}>
                 <MainLayout />
             </MantineProvider>
             <Scripts />

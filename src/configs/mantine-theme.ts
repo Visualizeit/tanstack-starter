@@ -37,10 +37,10 @@ const mantineTheme = createTheme({
     },
     components: {
         Badge: Badge.extend({
-            classNames: { root: 'font-medium' },
+            classNames: { root: 'font-(--mantine-font-weight-regular)' },
         }),
         Button: Button.extend({
-            classNames: { root: 'font-medium' },
+            classNames: { root: 'font-(--mantine-font-weight-regular)' },
         }),
         Container: Container.extend({ defaultProps: { strategy: 'grid' } }),
         Input: Input.extend({
