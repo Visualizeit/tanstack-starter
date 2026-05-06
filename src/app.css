@@ -1,20 +1,11 @@
 @layer theme, base, mantine, components, utilities;
 
-@import 'tailwindcss';
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities) source("./");
 
-@import '@mantine/core/styles.layer.css';
+@import "@mantine/core/styles.layer.css";
 
 @custom-variant dark (&:where(
     [data-mantine-color-scheme="dark"],
     [data-mantine-color-scheme="dark"] *
   ));
-
-@layer base {
-    ol {
-        list-style: decimal;
-    }
-
-    ul {
-        list-style: disc;
-    }
-}
