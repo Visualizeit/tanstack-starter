@@ -20,7 +20,7 @@
         "es-toolkit": "^1.47.0",
         "lucide-react": "^1.17.0",
         "nitro": "3.0.260522-beta",
-        "react": "^19.2.6",
+        "react": "^19.2.7",
         "react-dom": "^19.2.6",
         "zod": "^4.4.3"
     },
@@ -29,7 +29,7 @@
         "@tailwindcss/vite": "4.3.0",
         "@total-typescript/tsconfig": "^1.0.4",
         "@types/node": "^25.9.1",
-        "@types/react": "^19.2.15",
+        "@types/react": "^19.2.16",
         "@types/react-dom": "^19.2.3",
         "@vitejs/plugin-react": "^6.0.2",
         "babel-plugin-react-compiler": "^1.0.0",
