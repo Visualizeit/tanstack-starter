@@ -1,17 +1,9 @@
-import {
-    Badge,
-    Button,
-    Container,
-    createTheme,
-    Input,
-    Switch,
-} from '@mantine/core'
+import { Badge, Button, Container, createTheme, Switch } from '@mantine/core'
 import type {
     DefaultMantineColor,
     DefaultMantineSize,
     MantineColorsTuple,
 } from '@mantine/core'
-import { cn } from 'cnfast'
 
 type ExtendedCustomColors = 'brand' | DefaultMantineColor
 
@@ -34,16 +26,16 @@ const mantineTheme = createTheme({
     activeClassName: 'active:brightness-90',
     colors: {
         brand: [
-            '#E5F3FF',
-            '#CDE2FF',
-            '#9AC2FF',
-            '#64A0FF',
-            '#3884FE',
-            '#1D72FE',
-            '#0969FF',
-            '#0058E4',
-            '#004ECD',
-            '#0043B5',
+            '#e3f7ff',
+            '#cde9ff',
+            '#9cd0ff',
+            '#67b6fd',
+            '#3ca0fa',
+            '#2292fa',
+            '#0485f7',
+            '#0078e1',
+            '#006bca',
+            '#005cb3',
         ],
     },
     components: {
@@ -54,15 +46,6 @@ const mantineTheme = createTheme({
             classNames: { root: 'font-(--mantine-font-weight-regular)' },
         }),
         Container: Container.extend({ defaultProps: { strategy: 'grid' } }),
-        Input: Input.extend({
-            classNames: {
-                input: cn(
-                    'transition-none',
-                    'focus-within:border-transparent focus-within:outline focus-within:outline-2 focus-within:outline-[var(--mantine-primary-color-filled)] focus-within:-outline-offset-1',
-                    '[&.mantine-Spotlight-search]:outline-0'
-                ),
-            },
-        }),
         Switch: Switch.extend({ defaultProps: { withThumbIndicator: false } }),
     },
     headings: {

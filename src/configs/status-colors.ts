@@ -1,7 +1,7 @@
 import type { MantineColor } from '@mantine/core'
 
 const STATUS_COLORS = {
-    ERROR: 'red',
+    DANGER: 'red',
     INFO: 'blue',
     SUCCESS: 'green',
     WARNING: 'yellow',
