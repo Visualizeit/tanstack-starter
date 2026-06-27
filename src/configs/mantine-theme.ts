@@ -11,7 +11,7 @@ import type {
     DefaultMantineSize,
     MantineColorsTuple,
 } from '@mantine/core'
-import { clsx } from 'clsx'
+import { cn } from 'cnfast'
 
 type ExtendedCustomColors = 'brand' | DefaultMantineColor
 
@@ -56,7 +56,7 @@ const mantineTheme = createTheme({
         Container: Container.extend({ defaultProps: { strategy: 'grid' } }),
         Input: Input.extend({
             classNames: {
-                input: clsx(
+                input: cn(
                     'transition-none',
                     'focus-within:border-transparent focus-within:outline focus-within:outline-2 focus-within:outline-[var(--mantine-primary-color-filled)] focus-within:-outline-offset-1',
                     '[&.mantine-Spotlight-search]:outline-0'
