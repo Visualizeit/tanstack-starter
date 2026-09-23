@@ -1,0 +1,13 @@
+{
+    "$schema": "https://unpkg.com/knip@6/schema-jsonc.json",
+    "includeEntryExports": true,
+    // Template scaffolding; remove entries once actually referenced.
+    "ignore": ["src/configs/status-colors.ts"],
+    "ignoreDependencies": [
+        "@hugeicons/core-free-icons",
+        "@hugeicons/react",
+        "cn",
+        "es-toolkit",
+        "zod",
+    ],
+}
