@@ -14,6 +14,7 @@ export default {
         typeCheck: true,
     },
     rules: {
+        'oxc/no-optional-chaining': 'error',
         'promise/prefer-await-to-then': 'off',
         'shadcn/no-arbitrary-values': ['warn', { allow: ['layout'] }],
         'shadcn/no-inline-styles': 'warn',

@@ -2,10 +2,6 @@
 
 In all interactions and commit messages, be extremely concise and sacrifice grammar for the sake of concision.
 
-## Package Manager
-
-Use **pnpm** exclusively.
-
 ## UI Solution
 
 - **Mantine** - Primary component library
@@ -13,21 +9,9 @@ Use **pnpm** exclusively.
 
 ## Coding Style
 
-### Function Declaration
-
-Always use **arrow functions with default exports**.
-
-### Type Definitions
-
-Prefer **interface** over type.
-
 ### Variable Naming
 
 Avoid abbreviated variable names. Use descriptive, full names.
-
-### Syntax
-
-Do not use optional chaining syntax.
 
 ### KISS Principle
 
