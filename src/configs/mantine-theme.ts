@@ -3,6 +3,7 @@ import {
     Button,
     Container,
     createTheme,
+    DEFAULT_THEME,
     rem,
     Switch,
 } from '@mantine/core'
@@ -67,6 +68,7 @@ const mantineTheme = createTheme({
         Container: Container.extend({ defaultProps: { strategy: 'grid' } }),
         Switch: Switch.extend({ defaultProps: { withThumbIndicator: false } }),
     },
+    fontFamily: `'HarmonyOS Sans SC', ${DEFAULT_THEME.fontFamily}`,
     headings: {
         fontWeight: 'var(--mantine-font-weight-medium)',
     },

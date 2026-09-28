@@ -29,6 +29,9 @@ importers:
       '@hugeicons/react':
         specifier: ^1.1.10
         version: 1.1.10(react@19.3.0)
+      '@lobehub/webfont-harmony-sans-sc-mini':
+        specifier: ^1.0.0
+        version: 1.0.0
       '@mantine/core':
         specifier: 9.6.2
         version: 9.6.2(@mantine/hooks@9.6.2(react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -477,6 +480,9 @@ packages:
 
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
+
+  '@lobehub/webfont-harmony-sans-sc-mini@1.0.0':
+    resolution: {integrity: sha512-OGeOZ6ljdcMHqErngpUikUhpWtfK4HTeM1PHRT8aew063rslCdly5dLJXeEv8Hf2nxYwQbZH10mlxuFJMmQYbw==}
 
   '@mantine/core@9.6.2':
     resolution: {integrity: sha512-6W7xA3FRlGMclVDCY5U6rqhgzc+x+7G3nR9rntcjtF/Slnkp79Em8yjAB01F0wBSnrBUMK1TqKENf5o5WHiPOA==}
@@ -3877,6 +3883,8 @@ snapshots:
 
   '@keyv/serialize@1.1.1':
     optional: true
+
+  '@lobehub/webfont-harmony-sans-sc-mini@1.0.0': {}
 
   '@mantine/core@9.6.2(@mantine/hooks@9.6.2(react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
     dependencies:
