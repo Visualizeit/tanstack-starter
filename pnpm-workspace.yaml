@@ -4,11 +4,11 @@ allowBuilds:
     msgpackr-extract: false
 
 catalog:
-    oxfmt: 0.68.0
-    oxlint: 1.83.0
-    vite: npm:@voidzero-dev/vite-plus-core@0.3.3
-    vite-plus: 0.3.3
-    vitest: 5.0.1
+    oxfmt: 0.73.0
+    oxlint: 1.88.0
+    vite: npm:@voidzero-dev/vite-plus-core@1.1.0
+    vite-plus: 1.1.0
+    vitest: 5.0.4
 
 minimumReleaseAge: 0
 
