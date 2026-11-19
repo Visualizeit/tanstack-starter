@@ -15,8 +15,10 @@ export default {
         typeCheck: true,
     },
     rules: {
-        // Anti-Slop requires SAFETY comments for type assertions.
-        'landmines-style/no-comments': 'off',
+        'landmines-style/no-comments': [
+            'error',
+            { allow: ['WARNING', 'SAFETY'] },
+        ],
         'oxc/no-optional-chaining': 'error',
         'promise/prefer-await-to-then': 'off',
         'shadcn/no-arbitrary-values': ['warn', { allow: ['layout'] }],

@@ -3,7 +3,7 @@ import { defineConfig, lazyPlugins } from 'vite-plus'
 import formatterConfig from './oxfmt.config'
 import lintConfig from './oxlint.config'
 
-// https://vitejs.dev/config/
+/** @see https://vitejs.dev/config/ */
 export default defineConfig({
     fmt: formatterConfig,
     lint: lintConfig,
