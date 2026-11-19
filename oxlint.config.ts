@@ -1,19 +1,24 @@
 import antiSlop from 'ultracite/oxlint/anti-slop'
 import core from 'ultracite/oxlint/core'
+import landmines from 'ultracite/oxlint/landmines'
 import react from 'ultracite/oxlint/react'
 import shadcn from 'ultracite/oxlint/shadcn'
 import tanstack from 'ultracite/oxlint/tanstack'
 import type { OxlintConfig } from 'vite-plus/lint'
 
 export default {
-    extends: [core, antiSlop, react, tanstack, shadcn],
+    extends: [core, antiSlop, react, tanstack, shadcn, landmines],
     ignorePatterns: core.ignorePatterns,
-    jsPlugins: shadcn.jsPlugins,
+    jsPlugins: [...shadcn.jsPlugins, ...landmines.jsPlugins],
     options: {
         typeAware: true,
         typeCheck: true,
     },
     rules: {
+        'landmines-style/no-comments': [
+            'error',
+            { allow: ['WARNING', 'SAFETY'] },
+        ],
         'oxc/no-optional-chaining': 'error',
         'promise/prefer-await-to-then': 'off',
         'shadcn/no-arbitrary-values': ['warn', { allow: ['layout'] }],
