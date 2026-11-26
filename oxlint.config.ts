@@ -1,6 +1,7 @@
 import antiSlop from 'ultracite/oxlint/anti-slop'
 import core from 'ultracite/oxlint/core'
 import jsPlugins, { jsPluginSettings } from 'ultracite/oxlint/js-plugins'
+import landmines from 'ultracite/oxlint/landmines'
 import react from 'ultracite/oxlint/react'
 import shadcn from 'ultracite/oxlint/shadcn'
 import tanstack from 'ultracite/oxlint/tanstack'
@@ -17,12 +18,13 @@ export default {
         tanstackJsPlugins,
         antiSlop,
         shadcn,
+        landmines,
     ],
     ignorePatterns: core.ignorePatterns,
     jsPlugins: [
         ...jsPlugins.jsPlugins,
         ...shadcn.jsPlugins,
-        { name: 'landmines', specifier: '@interfere/landmines' },
+        ...landmines.jsPlugins,
     ],
     options: {
         typeAware: true,
@@ -36,16 +38,10 @@ export default {
     ],
     settings: jsPluginSettings,
     rules: {
-        'landmines/colocated-tests': 'error',
-        'landmines/no-comments': ['error', { allow: ['WARNING', 'SAFETY'] }],
-        'landmines/no-explicit-return-types': 'error',
-        'landmines/no-fixed-sleep': 'error',
-        'landmines/no-flake-masking': 'error',
-        'landmines/no-test-doubles': 'error',
-        'landmines/no-unsignaled-poll': 'error',
-        'landmines/package-exports': 'error',
-        'landmines/strict-msw': 'error',
-        'landmines/test-file-names': 'error',
+        'landmines-style/no-comments': [
+            'error',
+            { allow: ['WARNING', 'SAFETY'] },
+        ],
         'oxc/no-optional-chaining': 'error',
         'promise/prefer-await-to-then': 'off',
         'shadcn/no-arbitrary-values': ['warn', { allow: ['layout'] }],

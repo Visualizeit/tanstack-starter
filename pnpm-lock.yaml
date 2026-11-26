@@ -66,8 +66,8 @@ importers:
         version: 4.6.7
     devDependencies:
       '@interfere/landmines':
-        specifier: 0.3.2
-        version: 0.3.2(oxlint@1.94.0(vite-plus@1.8.0(@types/node@26.6.11)(@vitest/ui@5.1.1(vitest@5.1.1))(jiti@2.7.0)(sugarss@5.0.2(postcss@8.5.33))(typescript@7.0.2)(yaml@2.9.1)))
+        specifier: 0.1.1
+        version: 0.1.1(oxlint@1.94.0(vite-plus@1.8.0(@types/node@26.6.11)(@vitest/ui@5.1.1(vitest@5.1.1))(jiti@2.7.0)(sugarss@5.0.2(postcss@8.5.33))(typescript@7.0.2)(yaml@2.9.1)))
       '@shadcn/lint':
         specifier: ^0.2.5
         version: 0.2.5(@typescript-eslint/parser@8.74.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))
@@ -345,8 +345,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@interfere/landmines@0.3.2':
-    resolution: {integrity: sha512-/fdJclUvPUTTFeq9ALcxTzAi6TGZM+oDnV0t1XUuW/49PQzAh1AHrZyHVGPcNAFdJfL4kWu9n2EHs2fLLmb0Vw==}
+  '@interfere/landmines@0.1.1':
+    resolution: {integrity: sha512-ClZhJIIMJaibCU11dQru3APhnHtzrfSRFbAfUhisusA/6ueURr1FRjJeu0i1n0Y0lGMwPNTqv9GNspJ23N9/hg==}
     engines: {node: '>=22.18.0'}
     peerDependencies:
       oxlint: 1.94.0
@@ -4324,12 +4324,11 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@interfere/landmines@0.3.2(oxlint@1.94.0(vite-plus@1.8.0(@types/node@26.6.11)(@vitest/ui@5.1.1(vitest@5.1.1))(jiti@2.7.0)(sugarss@5.0.2(postcss@8.5.33))(typescript@7.0.2)(yaml@2.9.1)))':
+  '@interfere/landmines@0.1.1(oxlint@1.94.0(vite-plus@1.8.0(@types/node@26.6.11)(@vitest/ui@5.1.1(vitest@5.1.1))(jiti@2.7.0)(sugarss@5.0.2(postcss@8.5.33))(typescript@7.0.2)(yaml@2.9.1)))':
     dependencies:
       '@babel/parser': 8.0.4
       '@babel/types': 8.0.4
       '@oxlint/plugins': 1.81.0
-      jsonc-parser: 3.3.1
       oxc-resolver: 11.24.2
       oxlint: 1.94.0(vite-plus@1.8.0(@types/node@26.6.11)(@vitest/ui@5.1.1(vitest@5.1.1))(jiti@2.7.0)(sugarss@5.0.2(postcss@8.5.33))(typescript@7.0.2)(yaml@2.9.1))
       zod: 4.6.6
