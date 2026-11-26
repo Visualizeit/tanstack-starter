@@ -6,14 +6,18 @@ allowBuilds:
 catalog:
     oxfmt: 0.79.0
     oxlint: 1.94.0
-    vite: npm:@voidzero-dev/vite-plus-core@8.3.8000
-    vite-plus: 1.7.0
-    vitest: 5.1.0
+    vite: npm:@voidzero-dev/vite-plus-core@8.3.8001
+    vite-plus: 1.8.0
+    vitest: 5.1.1
 
 minimumReleaseAge: 0
 
 overrides:
+    # GitHub's import and JSX accessibility plugins require ESLint 9.
+    'eslint-plugin-github@6.1.2>eslint': ^9.39.5
     oxfmt: 'catalog:'
     oxlint: 'catalog:'
+    # This project uses Ultracite's Oxlint backend.
+    'ultracite@8.3.1>eslint': '-'
     vite@*: 'catalog:'
     vitest@*: 'catalog:'

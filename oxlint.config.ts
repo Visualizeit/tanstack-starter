@@ -1,19 +1,42 @@
 import antiSlop from 'ultracite/oxlint/anti-slop'
 import core from 'ultracite/oxlint/core'
+import jsPlugins, { jsPluginSettings } from 'ultracite/oxlint/js-plugins'
 import landmines from 'ultracite/oxlint/landmines'
 import react from 'ultracite/oxlint/react'
 import shadcn from 'ultracite/oxlint/shadcn'
 import tanstack from 'ultracite/oxlint/tanstack'
+import tanstackJsPlugins from 'ultracite/oxlint/tanstack/js-plugins'
 import type { OxlintConfig } from 'vite-plus/lint'
 
 export default {
-    extends: [core, antiSlop, react, tanstack, shadcn, landmines],
+    env: core.env,
+    extends: [
+        core,
+        react,
+        tanstack,
+        jsPlugins,
+        tanstackJsPlugins,
+        antiSlop,
+        shadcn,
+        landmines,
+    ],
     ignorePatterns: core.ignorePatterns,
-    jsPlugins: [...shadcn.jsPlugins, ...landmines.jsPlugins],
+    jsPlugins: [
+        ...jsPlugins.jsPlugins,
+        ...shadcn.jsPlugins,
+        ...landmines.jsPlugins,
+    ],
     options: {
         typeAware: true,
         typeCheck: true,
     },
+    overrides: [
+        {
+            files: ['**/*.test.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
+            rules: { 'sonarjs/no-empty-test-file': 'error' },
+        },
+    ],
+    settings: jsPluginSettings,
     rules: {
         'landmines-style/no-comments': [
             'error',
@@ -27,5 +50,6 @@ export default {
         'shadcn/no-restyle': ['warn', { allow: ['layout'] }],
         'shadcn/no-unknown-classes': 'warn',
         'shadcn/require-static-classes': 'warn',
+        'sonarjs/no-empty-test-file': 'off',
     },
 } satisfies OxlintConfig
